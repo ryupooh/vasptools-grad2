@@ -15,8 +15,8 @@
 # Copyright 2008-2012 Peter Larsson
 #
 # Changes made by Ryuichi Suehiro:
-# - [Describe change 1]
-# - [Describe change 2]
+# - support for python3
+# - force will be calculated for only free ions if selective dynamics is specified
 
 import subprocess
 import os
