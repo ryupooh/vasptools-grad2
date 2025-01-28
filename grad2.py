@@ -49,7 +49,7 @@ parser.add_option("-v","--verbose",dest="verbose",help="Print extra info",action
 (options,args) = parser.parse_args()
 
 try:
-    outcar = file(args[0],"r")
+    outcar = open(args[0],"r")
 except IOError:
     sys.stderr.write(FAIL)
     sys.stderr.write("There was a problem opening the OUTCAR file. Does it exist at all?")
