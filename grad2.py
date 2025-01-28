@@ -154,12 +154,12 @@ for line in outcarlines:
             print("Cannot understand this OUTCAR file...try to read ahead")
             continue
 
-        if iterations == nelmax:
-            sys.stdout.write(FAIL)
+        #if iterations == nelmax:
+        #    sys.stdout.write(FAIL)
             #print("         ^--- SCF cycle reached NELMAX. Check convergence!")
 
-        if (dE < ediff):
-            sys.stdout.write(OKGREEN)
+        #if (dE < ediff):
+        #    sys.stdout.write(OKGREEN)
 
         if spinpolarized:
             # sys.stdout.write(("Step %3i  Energy: %+3.6f  Log|dE|: %+1.3f  Avg|F|: %.6f  Max|F|: %.6f  SCF: %3i  Mag: %2.2f  Time: %03.2fm") % (steps,energy,dE,average,maxforce,iterations,magmom,cputime))
@@ -169,7 +169,7 @@ for line in outcarlines:
             print("%s  %s  %s  %s  %s  %s  %s  %s" % (stepstr,energystr,logdestr,iterstr,avgfstr,maxfstr,volstr,timestr))
             # sys.stdout.write(("Step %3i  Energy: %+3.6f  Log|dE|: %+1.3f  Avg|F|: %.6f  Max|F|: %.6f  SCF: %3i  Time: %03.2fm") % (steps,energy,dE,average,maxforce,iterations,cputime))
 
-        sys.stdout.write(ENDC)
+#        sys.stdout.write(ENDC)
 
         steps = steps + 1
         iterations = 0
